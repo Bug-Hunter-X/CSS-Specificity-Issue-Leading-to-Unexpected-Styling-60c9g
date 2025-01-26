@@ -1,0 +1,17 @@
+/* Solution: Adjust Specificity or Use !important (use cautiously) */
+.container {
+  background-color: lightblue; /* Less specific selector */
+}
+
+.container .item {
+  background-color: lightgreen; /* More specific selector */
+}
+
+/* A more robust solution is to adjust the order or selectors to solve specificity problems */
+.container {
+  background-color: lightblue; /* Less specific selector */
+}
+
+.item {
+  background-color: lightgreen !important; /* Use with caution */
+}
